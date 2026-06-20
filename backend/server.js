@@ -11,7 +11,18 @@ const bookingRoutes = require('./routes/bookingRoutes');
 
 const app = express();
 
-app.use(cors({ origin: process.env.CLIENT_ORIGIN || '*' }));
+const allowedOrigins = [
+  'http://localhost:5173',
+  process.env.CLIENT_ORIGIN
+].filter(Boolean);
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) return callback(null, true);
+    callback(new Error('Not allowed by CORS'));
+  },
+  credentials: true
+}));
 app.use(express.json());
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
@@ -22,9 +33,7 @@ app.use('/api/theatres', theatreRoutes);
 app.use('/api/showtimes', showtimeRoutes);
 app.use('/api/bookings', bookingRoutes);
 
-// Fallback error handler
 app.use((err, req, res, next) => {
-  console.error(err);
   res.status(500).json({ message: 'Something went wrong', error: err.message });
 });
 
