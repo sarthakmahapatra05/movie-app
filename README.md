@@ -1,10 +1,10 @@
-# 🎬 Creative Upaay — Movie Ticket Reservation App
+#  Creative Upaay — Movie Ticket Reservation App
 
 A mobile-first (390px max-width) movie ticket booking application built for the **Creative Upaay Full Stack Development Assignment**. The app replicates the provided Figma design with pixel accuracy and implements every Level 1 requirement plus most Level 2 requirements.
 
 ---
 
-## 🔗 Live Demo / Repo
+##  Live Demo / Repo
 
 | Resource | URL |
 |---|---|
@@ -15,7 +15,7 @@ A mobile-first (390px max-width) movie ticket booking application built for the 
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -30,7 +30,7 @@ A mobile-first (390px max-width) movie ticket booking application built for the 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 movie-app/
@@ -81,7 +81,7 @@ movie-app/
 
 ---
 
-## 🧠 Approach & Architecture
+##  Approach & Architecture
 
 ### Booking Flow
 The app follows the exact Figma screen sequence:
@@ -148,7 +148,7 @@ Both slices are persisted to `localStorage` via `redux-persist`. **This directly
 
 ---
 
-## 🚀 Running Locally
+##  Running Locally
 
 ### Prerequisites
 - Node.js 18+
@@ -187,7 +187,7 @@ npm run dev             # Starts on http://localhost:5173
 
 ---
 
-## 🚢 Deployment
+## Deployment
 
 ### Frontend (Vercel / Netlify)
 ```bash
@@ -204,7 +204,7 @@ npm run build           # Outputs to dist/
 
 ---
 
-## 📝 Assumptions
+## Assumptions
 
 - Pricing, seat layout, and showtimes are seeded mock data (`seed.js`). A real cinema integration would replace this.
 - "Upcoming" vs "Past" bookings are split by comparing the showtime date to today's date.
