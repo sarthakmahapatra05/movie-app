@@ -13,6 +13,7 @@ const app = express();
 
 const allowedOrigins = [
   'http://localhost:5173',
+  'https://movieapp-two-blush.vercel.app',
   process.env.CLIENT_ORIGIN
 ].filter(Boolean);
 
