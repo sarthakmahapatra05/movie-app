@@ -50,7 +50,6 @@ export default function Home() {
   return (
     <div className="app-shell">
       <div className="app-content overflow-y-auto no-scrollbar">
-        {/* Hero banner */}
         <div className="relative h-56">
           <PosterImage src="/homepagehero.png" alt={featured?.title || 'Featured movie'} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
@@ -61,7 +60,7 @@ export default function Home() {
         </div>
 
         <div className="px-5 pt-4">
-          {/* Tabs */}
+
           <div className="flex items-center justify-between mb-3">
             <div className="flex gap-5 text-sm">
               <button
@@ -80,7 +79,6 @@ export default function Home() {
             <span className="text-xs font-medium text-primary">View All</span>
           </div>
 
-          {/* Movie carousel */}
           <div className="flex gap-3 overflow-x-auto no-scrollbar pb-2 -mx-5 px-5">
             {loading && <p className="text-sm text-ink-muted py-6">Loading movies…</p>}
             {!loading && filtered.length === 0 && (
@@ -103,7 +101,7 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Theatres */}
+
           <div className="flex items-center justify-between mt-6 mb-3">
             <h2 className="font-bold text-base">Movie Theatres</h2>
             <span className="text-xs font-medium text-primary">View All</span>

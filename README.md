@@ -1,4 +1,4 @@
-#  Creative Upaay — Movie Ticket Reservation App
+# Creative Upaay — Movie Ticket Reservation App
 
 A mobile-first (390px max-width) movie ticket booking application built for the **Creative Upaay Full Stack Development Assignment**. The app replicates the provided Figma design with pixel accuracy and implements every Level 1 requirement plus most Level 2 requirements.
 
@@ -148,7 +148,7 @@ Both slices are persisted to `localStorage` via `redux-persist`. **This directly
 
 ---
 
-##  Running Locally
+## Running Locally
 
 ### Prerequisites
 - Node.js 18+
@@ -182,8 +182,8 @@ npm run dev             # Starts on http://localhost:5173
 ### Test Payment States
 | Card Number | Outcome |
 |---|---|
-| Any valid number | ✅ Payment success |
-| Ends in `0002` | ❌ Simulated bank decline |
+| Any valid number |  Payment success |
+| Ends in `0002` |  Simulated bank decline |
 
 ---
 

@@ -7,9 +7,7 @@ import FlowHeader from '../components/FlowHeader';
 import ProgressBar from '../components/ProgressBar';
 import BottomNav from '../components/BottomNav';
 
-// Card numbers ending in this sequence simulate a declined payment,
-// so the checkout flow's failure state can be exercised end-to-end
-// without a real payment gateway.
+
 const SIMULATED_DECLINE_SUFFIX = '0002';
 
 function luhnLikeLength(num) {
@@ -42,7 +40,7 @@ export default function Payment() {
   const dispatch = useDispatch();
   const { selectedShowtime, selectedSeats } = useSelector((s) => s.booking);
   const totals = useSelector(selectTotals);
-  // Redirect if no valid showtime selected
+
   useEffect(() => {
     if (!selectedShowtime) {
       navigate('/', { replace: true });
