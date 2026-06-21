@@ -11,16 +11,10 @@ const bookingRoutes = require('./routes/bookingRoutes');
 
 const app = express();
 
-const allowedOrigins = [
-  'http://localhost:5173',
-  'https://movieapp-two-blush.vercel.app',
-  process.env.CLIENT_ORIGIN
-].filter(Boolean);
-
 app.use(cors({
   origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) return callback(null, true);
-    callback(new Error('Not allowed by CORS'));
+    // Dynamically allow any origin (especially Vercel preview URLs)
+    callback(null, true);
   },
   credentials: true
 }));
