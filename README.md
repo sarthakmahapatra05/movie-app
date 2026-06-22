@@ -10,7 +10,7 @@ A mobile-first (390px max-width) movie ticket booking application built for the 
 |---|---|
 | Frontend (deployed) | https://movieapp-nmus94zxz-sarthak-mahapatras-projects-af316968.vercel.app |
 | Backend (deployed) | https://movie-app-rtgl.onrender.com |
-| Video Walkthrough | _add your video link here_ |
+| Video Walkthrough | https://drive.google.com/file/d/1pq9D8Nx_3qXTIc2_8AEZS0UfqWBMc0aE/view?usp=drive_link |
 | GitHub Repository | https://github.com/sarthakmahapatra05/movie-app |
 
 ---
